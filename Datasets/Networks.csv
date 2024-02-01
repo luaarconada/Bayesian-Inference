@@ -1,0 +1,319 @@
+Age;Sex;Social.network;Time;Use;Online.shopping;Adds;Frequency.clicking.adds;Follow.brands;Influence;Group time;Group.age
+22;Female;Twitter;3.5;Entertainment;No;Instagram;Never;Yes;No;1;Group1
+21;Male;Twitter;3;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+25;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;No;No;1;Group1
+25;Male;Instagram;1.5;Entertainment;Yes;YouTube;Sometimes;No;No;1;Group1
+22;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+22;Male;YouTube;0.5;Entertainment;Yes;Instagram;Never;No;Yes;1;Group1
+22;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+21;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+25;Male;YouTube;0.5;Entertainment;Yes;YouTube;Sometimes;No;Yes;1;Group1
+58;Female;YouTube;0.5;Work;Yes;YouTube;Never;No;No;2;Group2
+22;Female;Instagram;6;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+24;Male;YouTube;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+24;Male;YouTube;3;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+22;Male;Instagram;1.5;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+24;Male;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;1;Group1
+26;Female;Instagram;3;Information searching;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+23;Male;Instagram;2;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+23;Female;Twitter;7;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+58;Female;Facebook;0.5;Work;No;YouTube;Sometimes;No;No;2;Group2
+26;Male;Twitter;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+23;Male;Instagram;1;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+22;Female;Instagram;3.5;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+21;Male;YouTube;2;Information searching;Yes;Instagram;Sometimes;Yes;No;1;Group1
+22;Male;Instagram;1;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+26;Female;Instagram;3;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+39;Female;LinkedIn;0.5;Work;Yes;YouTube;Never;No;No;2;Group2
+22;Male;Instagram;1.5;Entertainment;Yes;Facebook;Sometimes;Yes;Yes;1;Group1
+53;Male;Twitter;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+19;Male;Instagram;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+19;Male;Instagram;1.5;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+19;Male;Instagram;1.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+15;Male;Instagram;0.5;Entertainment;No;Instagram;Never;Yes;No;1;Group1
+57;Female;YouTube;1;Information searching;Yes;YouTube;Never;No;No;2;Group2
+23;Male;YouTube;0.5;Entertainment;Yes;YouTube;Sometimes;No;No;1;Group1
+22;Female;Instagram;4;Entertainment;No;YouTube;Sometimes;Yes;Yes;1;Group1
+22;Female;YouTube;3.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+23;Female;Twitter;7.5;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+25;Female;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+20;Female;Instagram;6.5;Entertainment;Yes;Instagram;Never;No;Yes;1;Group1
+21;Female;WhatsApp;4;Work;Yes;Instagram;Sometimes;No;Yes;1;Group1
+19;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+15;Male;Instagram;0.5;Entertainment;No;Instagram;Never;Yes;No;1;Group1
+19;Female;Instagram;3;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;3.5;Entertainment;No;YouTube;Sometimes;Yes;No;1;Group1
+59;Female;Facebook;1.5;Information searching;Yes;Facebook;Sometimes;No;No;2;Group2
+23;Female;YouTube;4;Entertainment;No;YouTube;Never;Yes;No;1;Group1
+42;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+20;Female;Instagram;6;Entertainment;Yes;Instagram;Never;No;Yes;1;Group1
+21;Male;YouTube;1.5;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Male;Instagram;0.5;Entertainment;Yes;YouTube;Never;No;Yes;1;Group1
+23;Female;Instagram;3;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+39;Female;YouTube;2;Entertainment;Yes;Facebook;Sometimes;No;No;2;Group2
+23;Rather not say;Twitter;2;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+23;Male;Instagram;0.5;Entertainment;Yes;YouTube;Never;No;Yes;1;Group1
+23;Male;Twitter;1.5;Entertainment;Yes;Instagram;Sometimes;No;Yes;1;Group1
+56;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+62;Male;Twitter;1.5;Information searching;Yes;Twitter;Never;No;No;2;Group2
+21;Male;Twitter;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+24;Female;Instagram;3;Entertainment;Yes;Facebook;Never;Yes;Yes;1;Group1
+21;Male;Twitter;3;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;YouTube;3.5;Entertainment;No;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;Twitter;7;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;Twitter;8;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+41;Female;YouTube;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+45;Female;Facebook;0.5;Entertainment;Yes;Facebook;Never;Yes;Yes;2;Group2
+63;Female;YouTube;0.5;Entertainment;No;Facebook;Never;No;No;2;Group2
+27;Female;Twitter;3;Work;Yes;Facebook;Never;Yes;No;1;Group1
+25;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Female;Instagram;3.5;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+78;Male;Facebook;2.5;Entertainment;No;Facebook;Never;No;No;2;Group2
+21;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+22;Female;Instagram;1.5;Entertainment;No;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;Instagram;0.5;Entertainment;No;Instagram;Never;Yes;No;1;Group1
+55;Female;Twitter;2;Information searching;No;YouTube;Sometimes;Yes;No;2;Group2
+22;Male;Twitter;3;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+22;Male;YouTube;1.5;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+28;Female;Instagram;5;Entertainment;No;YouTube;Sometimes;Yes;No;1;Group1
+44;Female;Instagram;7.5;Work;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+56;Male;YouTube;0.5;Work;Yes;YouTube;Never;No;No;2;Group2
+23;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;1;Group1
+44;Female;Facebook;4.5;Work;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+23;Female;Instagram;0.5;Information searching;Yes;Facebook;Sometimes;No;Yes;1;Group1
+25;Female;YouTube;1.5;Entertainment;Yes;Facebook;Never;Yes;No;1;Group1
+24;Male;YouTube;0.5;Information searching;Yes;Facebook;Never;No;No;1;Group1
+22;Female;Twitter;6;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+21;Male;Instagram;4;Entertainment;No;YouTube;Never;Yes;Yes;1;Group1
+57;Female;Facebook;0.5;Work;Yes;Instagram;Never;No;No;2;Group2
+55;Female;YouTube;1.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+20;Female;Instagram;5;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+26;Male;YouTube;1.5;Entertainment;Yes;YouTube;Always;No;No;1;Group1
+21;Male;Twitter;1.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+44;Male;Instagram;2;Information searching;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+20;Male;Instagram;4;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+35;Male;Facebook;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+22;Female;Instagram;3;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;Twitter;5.5;Information searching;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+30;Male;Instagram;1.5;Entertainment;Yes;YouTube;Never;Yes;No;2;Group1
+41;Female;YouTube;0.5;Information searching;No;YouTube;Never;No;No;2;Group2
+39;Female;Facebook;3;Entertainment;Yes;Facebook;Sometimes;No;No;2;Group2
+40;Female;YouTube;1.5;Entertainment;No;Facebook;Never;Yes;Yes;2;Group2
+20;Female;Twitter;1.5;Entertainment;No;Instagram;Never;No;No;1;Group1
+32;Female;Facebook;3;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;2;Group2
+43;Female;Instagram;4;Entertainment;No;YouTube;Sometimes;Yes;Yes;2;Group2
+41;Female;Facebook;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+53;Female;Twitter;1.5;Entertainment;Yes;Facebook;Never;Yes;Yes;2;Group2
+27;Male;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+22;Male;YouTube;2;Entertainment;Yes;YouTube;Sometimes;No;No;1;Group1
+50;Female;Facebook;1;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+31;Male;Facebook;1.5;Entertainment;No;YouTube;Never;No;No;2;Group1
+21;Female;Instagram;1.5;Entertainment;Yes;Facebook;Never;No;No;1;Group1
+31;Female;YouTube;0.5;Information searching;Yes;YouTube;Sometimes;No;Yes;2;Group1
+23;Female;Instagram;3;Entertainment;No;YouTube;Sometimes;Yes;No;1;Group1
+23;Female;Instagram;8.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Male;Twitter;1.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+23;Female;Instagram;5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+41;Female;WhatsApp;0.5;Entertainment;No;YouTube;Sometimes;No;No;2;Group2
+23;Female;YouTube;3;Information searching;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+22;Male;Twitter;2;Entertainment;No;Facebook;Never;No;Yes;1;Group1
+23;Female;Twitter;3;Information searching;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+59;Male;YouTube;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+23;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+27;Male;Twitter;3;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+21;Male;Twitter;2;Entertainment;No;Instagram;Never;No;No;1;Group1
+28;Male;Instagram;1;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+41;Male;Instagram;1.5;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;2;Group2
+23;Male;Instagram;2.5;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+56;Female;Instagram;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+56;Female;Instagram;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+25;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+32;Male;YouTube;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;2;Group2
+24;Female;Instagram;1.5;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+21;Male;Instagram;3;Entertainment;No;Instagram;Never;No;No;1;Group1
+21;Male;YouTube;1.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+23;Female;YouTube;1.5;Entertainment;Yes;Facebook;Sometimes;No;Yes;1;Group1
+23;Female;Instagram;3;Entertainment;No;YouTube;Sometimes;Yes;No;1;Group1
+41;Female;YouTube;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+22;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;1;Group1
+22;Female;Instagram;5;Entertainment;No;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;0.5;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+48;Male;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;No;2;Group2
+41;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;Yes;No;2;Group2
+41;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;Yes;No;2;Group2
+22;Female;Instagram;1.5;Entertainment;No;Instagram;Sometimes;Yes;Yes;1;Group1
+42;Female;Facebook;2;Entertainment;No;Instagram;Sometimes;Yes;Yes;2;Group2
+21;Male;WhatsApp;4;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+40;Male;Facebook;0.5;Entertainment;Yes;Facebook;Sometimes;No;No;2;Group2
+23;Female;Facebook;3;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+41;Female;Facebook;0.5;Entertainment;No;Facebook;Never;No;No;2;Group2
+42;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+23;Male;Instagram;2;Entertainment;No;YouTube;Sometimes;Yes;Yes;1;Group1
+42;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+39;Male;Facebook;0.5;Information searching;Yes;Facebook;Never;No;No;2;Group2
+24;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+26;Male;Twitter;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+21;Female;Instagram;2;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+23;Female;Instagram;1;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+26;Male;Instagram;3;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+29;Female;Facebook;2;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+22;Female;Instagram;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+25;Female;Instagram;0.5;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+22;Male;Instagram;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+23;Female;WhatsApp;4;Entertainment;Yes;Facebook;Never;Yes;No;1;Group1
+21;Male;Twitter;6;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Female;Instagram;3;Entertainment;Yes;Facebook;Sometimes;Yes;Yes;1;Group1
+23;Female;Twitter;6.5;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+38;Female;Facebook;0.5;Entertainment;Yes;Facebook;Never;Yes;No;2;Group2
+50;Male;Facebook;1.5;Work;Yes;Facebook;Sometimes;Yes;No;2;Group2
+39;Male;Instagram;1.5;Entertainment;Yes;Facebook;Never;Yes;No;2;Group2
+21;Male;Twitter;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+20;Male;Twitter;0.5;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+23;Female;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+21;Female;Instagram;2;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+25;Male;Twitter;1.5;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+20;Male;YouTube;3.5;Entertainment;Yes;YouTube;Never;No;Yes;1;Group1
+22;Male;Instagram;0.5;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+22;Male;WhatsApp;1.5;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+22;Female;Instagram;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+25;Male;YouTube;2;Entertainment;No;Facebook;Sometimes;No;No;1;Group1
+22;Male;Twitter;2;Entertainment;No;Facebook;Never;No;Yes;1;Group1
+21;Male;Twitter;0.5;Entertainment;Yes;Instagram;Never;No;No;1;Group1
+21;Male;Twitter;0.5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+20;Male;YouTube;7;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+56;Male;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+29;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+50;Male;None;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+50;Male;None;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+56;Female;Twitter;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+55;Female;WhatsApp;1.5;Information searching;Yes;Facebook;Sometimes;No;No;2;Group2
+56;Female;Twitter;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+18;Female;Instagram;9;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+23;Male;Twitter;1.5;Entertainment;Yes;YouTube;Sometimes;No;No;1;Group1
+56;Male;LinkedIn;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+59;Male;YouTube;2;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+42;Male;Facebook;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+41;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;Yes;No;2;Group2
+39;Female;Facebook;0.5;Entertainment;Yes;Facebook;Never;Yes;No;2;Group2
+55;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+24;Male;YouTube;1.5;Entertainment;Yes;YouTube;Never;No;Yes;1;Group1
+54;Female;Facebook;2;Entertainment;Yes;Facebook;Sometimes;Yes;No;2;Group2
+56;Male;LinkedIn;0.5;Information searching;No;YouTube;Sometimes;No;No;2;Group2
+54;Female;Facebook;2;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+54;Female;Facebook;1.5;Entertainment;No;Facebook;Sometimes;No;No;2;Group2
+18;Male;YouTube;5;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+21;Female;YouTube;4;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+56;Female;None;0.5;Information searching;No;Facebook;Never;No;No;2;Group2
+55;Female;YouTube;0.5;Information searching;No;YouTube;Never;No;No;2;Group2
+57;Female;Instagram;0.5;Information searching;No;YouTube;Sometimes;No;No;2;Group2
+21;Female;Instagram;6;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+55;Male;Facebook;0.5;Information searching;Yes;YouTube;Never;No;Yes;2;Group2
+21;Male;Twitter;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+56;Male;LinkedIn;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+59;Female;YouTube;0.5;Entertainment;Yes;YouTube;Sometimes;No;Yes;2;Group2
+26;Female;YouTube;2;Entertainment;Yes;YouTube;Never;Yes;No;1;Group1
+53;Female;Facebook;1.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+25;Female;Instagram;2;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+54;Female;Facebook;0.5;Entertainment;Yes;Facebook;Sometimes;Yes;No;2;Group2
+54;Female;Facebook;1.5;Entertainment;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+56;Female;Twitter;2;Entertainment;Yes;Facebook;Never;Yes;No;2;Group2
+26;Female;Twitter;3;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+54;Female;YouTube;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+25;Female;WhatsApp;4;Entertainment;No;YouTube;Never;Yes;Yes;1;Group1
+63;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+53;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+37;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;2;Group2
+25;Male;Instagram;2;Entertainment;Yes;YouTube;Sometimes;No;No;1;Group1
+59;Female;Twitter;0.5;Information searching;No;LinkedIn;Never;No;No;2;Group2
+60;Female;Facebook;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+56;Female;Twitter;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+22;Female;Instagram;2;Entertainment;No;Instagram;Sometimes;Yes;No;1;Group1
+21;Male;Instagram;2;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+22;Female;Instagram;1.5;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+56;Male;Facebook;2.5;Entertainment;Yes;Facebook;Sometimes;No;Yes;2;Group2
+26;Male;Twitter;3;Work;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+27;Female;YouTube;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+50;Female;Facebook;1.5;Work;Yes;Facebook;Sometimes;No;No;2;Group2
+53;Female;Twitter;3;Information searching;Yes;Facebook;Never;No;Yes;2;Group2
+32;Female;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group2
+17;Female;Instagram;1.5;Entertainment;No;YouTube;Never;Yes;No;1;Group1
+23;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+17;Female;YouTube;1.5;Entertainment;No;YouTube;Sometimes;Yes;No;1;Group1
+21;Male;Instagram;2;Entertainment;Yes;YouTube;Never;Yes;Yes;1;Group1
+39;Male;Instagram;2;Entertainment;Yes;Facebook;Never;Yes;No;2;Group2
+34;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;2;Group2
+22;Female;Instagram;1.5;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+54;Female;YouTube;1.5;Work;Yes;YouTube;Never;No;No;2;Group2
+35;Female;Facebook;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;2;Group2
+34;Female;Instagram;5;Entertainment;Yes;Instagram;Never;Yes;Yes;2;Group2
+49;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;Yes;No;2;Group2
+58;Female;YouTube;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+58;Female;YouTube;1.5;Information searching;Yes;Facebook;Sometimes;No;No;2;Group2
+29;Female;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+60;Female;Facebook;2;Entertainment;Yes;Facebook;Sometimes;No;No;2;Group2
+59;Female;YouTube;4;Entertainment;Yes;YouTube;Sometimes;No;No;2;Group2
+53;Female;Twitter;3;Information searching;Yes;Facebook;Never;No;Yes;2;Group2
+39;Female;Instagram;0.5;Information searching;Yes;Instagram;Never;No;No;2;Group2
+60;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+50;Female;LinkedIn;0.5;Work;Yes;YouTube;Never;No;No;2;Group2
+18;Male;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+35;Male;Instagram;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+44;Male;Instagram;1.5;Information searching;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+68;Male;Facebook;2;Information searching;No;Facebook;Sometimes;No;No;2;Group2
+56;Male;LinkedIn;0.5;Work;Yes;YouTube;Never;No;No;2;Group2
+29;Female;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+33;Female;Instagram;4;Entertainment;Yes;YouTube;Never;Yes;Yes;2;Group2
+23;Female;Instagram;2;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+44;Male;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+60;Female;Facebook;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+57;Female;Facebook;2;Entertainment;Yes;Facebook;Sometimes;Yes;No;2;Group2
+63;Male;Twitter;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+63;Female;YouTube;0.5;Entertainment;No;Facebook;Never;No;No;2;Group2
+33;Female;Instagram;2;Entertainment;Yes;Facebook;Sometimes;Yes;Yes;2;Group2
+60;Female;YouTube;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+55;Female;Facebook;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+47;Female;Facebook;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+59;Female;Facebook;2;Entertainment;No;Facebook;Never;No;No;2;Group2
+55;Female;YouTube;1;Information searching;No;YouTube;Sometimes;No;No;2;Group2
+47;Female;Facebook;2;Entertainment;Yes;YouTube;Never;Yes;Yes;2;Group2
+22;Male;Instagram;1.5;Entertainment;Yes;Instagram;Never;No;Yes;1;Group1
+55;Male;YouTube;0.5;Entertainment;No;YouTube;Never;No;No;2;Group2
+59;Female;WhatsApp;1.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+55;Male;YouTube;0.8;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+24;Female;Instagram;6;Entertainment;Yes;Facebook;Sometimes;Yes;Yes;1;Group1
+56;Female;YouTube;0.5;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+52;Female;Facebook;1.5;Entertainment;No;Instagram;Never;No;No;2;Group2
+50;Female;Facebook;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;2;Group2
+53;Female;Facebook;2;Entertainment;Yes;YouTube;Never;No;No;2;Group2
+53;Female;WhatsApp;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+55;Female;Instagram;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;2;Group2
+59;Male;Facebook;0.5;Information searching;Yes;Facebook;Never;No;No;2;Group2
+22;Male;YouTube;4;Entertainment;Yes;YouTube;Never;No;No;1;Group1
+22;Female;Twitter;2;Entertainment;Yes;Instagram;Never;Yes;Yes;1;Group1
+16;Female;Instagram;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+60;Female;YouTube;0.5;Information searching;Yes;Facebook;Sometimes;No;No;2;Group2
+51;Female;Instagram;0.5;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;2;Group2
+30;Rather not say;Facebook;0.5;Information searching;Yes;Facebook;Always;No;Yes;2;Group1
+59;Female;WhatsApp;2;Information searching;Yes;YouTube;Never;No;No;2;Group2
+50;Female;WhatsApp;2;Information searching;Yes;YouTube;Never;No;No;2;Group2
+63;Male;Facebook;0.5;Information searching;No;Instagram;Never;No;No;2;Group2
+32;Male;YouTube;0.5;Entertainment;Yes;Instagram;Sometimes;No;No;2;Group2
+21;Male;YouTube;4;Entertainment;No;Instagram;Sometimes;Yes;Yes;1;Group1
+16;Female;Instagram;6;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+55;Male;YouTube;0.5;Information searching;Yes;YouTube;Sometimes;No;No;2;Group2
+62;Male;YouTube;0.5;Entertainment;Yes;Facebook;Never;No;No;2;Group2
+20;Male;YouTube;5;Entertainment;Yes;Instagram;Never;Yes;No;1;Group1
+22;Female;Twitter;6;Entertainment;Yes;Instagram;Sometimes;No;Yes;1;Group1
+18;Male;Instagram;4;Entertainment;Yes;YouTube;Sometimes;Yes;Yes;1;Group1
+23;Female;Instagram;4;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+20;Male;Instagram;3.5;Entertainment;Yes;Instagram;Sometimes;Yes;No;1;Group1
+49;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;Yes;No;2;Group2
+18;Female;Instagram;6;Entertainment;Yes;Instagram;Sometimes;Yes;Yes;1;Group1
+55;Male;YouTube;0.5;Information searching;Yes;YouTube;Never;No;No;2;Group2
+62;Female;YouTube;0.5;Entertainment;Yes;YouTube;Sometimes;No;No;2;Group2
+39;Male;Facebook;0.5;Information searching;Yes;Facebook;Never;No;No;2;Group2
+39;Male;Facebook;0.5;Information searching;Yes;Facebook;Never;No;No;2;Group2
