@@ -15,6 +15,7 @@ n=length(type)
 p = rep(0,n)
 p = cumsum(type=="spam")/c(1:n)
 plot(1:n,p,type="l")
+#It converges to the probability of spam which is p[n]=0.1343767.
 
 #
 # Assume a Beta(2,4) prior for the probability of receiving a spam email. Obtain the posterior given 
