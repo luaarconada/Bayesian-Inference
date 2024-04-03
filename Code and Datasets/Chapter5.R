@@ -8,7 +8,6 @@ attach(trees)
 # 1.
 pairs(trees)
 pairs(log(trees))
-
 # 2.
 freq.reg <- lm(log(Volume) ~ log(Height) + log(Girth))
 summary(freq.reg)
@@ -27,7 +26,7 @@ exp(predict(freq.reg,data.frame(Height= 75,Girth = 14), interval = "prediction")
 library(MCMCpack)
 burnin = 1000 
 mcmc  = 10000
-bayes.reg <- MCMCregress(log(Volume) ~ log(Height) + log(Girth),data=trees, thin=1,  burnin= burnin, mcmc = mcmc)
+bayes.reg <- MCMCregress(log(Volume) ~ log(Height) + log(Girth), data=trees, thin=1,  burnin= burnin, mcmc = mcmc)
 summary(bayes.reg)
 # 2.
 plot(bayes.reg)
@@ -42,6 +41,7 @@ apply(bayes.reg, 2,quantile, probs = c(0.025,0.975))
 n = dim(trees)[1]
 beta = bayes.reg[,1:3] 
 mean.beta = apply(beta, 2,mean)
+mean.beta
 X = cbind(rep(1,n),log(Height),log(Girth))
 mean.y = X%*%mean.beta
 plot(log(Volume), mean.y,pch=16)

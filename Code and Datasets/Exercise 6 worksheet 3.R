@@ -35,7 +35,7 @@ a2 = a + n
 b2 = b + (n-1)*var(sample_prior) + c*n*(m - mean(sample_prior))^2 / (c + n)
 
 # We sample the posterior tau
-tau_posterior = rgamma(1, shape = a2/2, rate = b2/2)
+tau_posterior = rgamma(n, shape = a2/2, rate = b2/2)
 
 # We sample the joint posterior mu
 mu_posterior = rnorm(n, mean = m2, sd = 1/(c2*tau_posterior))

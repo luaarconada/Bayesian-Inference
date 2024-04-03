@@ -23,6 +23,7 @@ fmean <- function(theta,mu,sigma,heads,tails,c){
 
 post.mean <- integrate(fmean,lower=0,upper=1,mu=mu,sigma=sigma,heads=heads,tails=tails,c)$value
 post.mean
+abline(v = post.mean)
 #
 # Pg. 6 
 N <- 100000

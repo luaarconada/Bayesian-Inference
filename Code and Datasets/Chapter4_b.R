@@ -32,6 +32,7 @@ for (i in 2:totits){
 }
 hist(thetapost,freq=F)
 mean(thetapost)
+abline(v = mean(thetapost), col = 'red')
 c <- integrate(fprop,lower=0,upper=1,mu=mu,sigma=sigma,heads=heads,tails=tails)$value
 c
 grid = seq(0,1,0.01)
@@ -42,6 +43,7 @@ plot(thetapost,type='l',ylab=expression(theta),xlab='iters')
 plot(cumsum(thetapost)/c(1:iters),type='l',ylab=expression(bar(theta)),xlab='iters')
 acf(thetapost,main='')
 
+# We trim
 thetapost2 = thetapost[seq(1,length(thetapost),by=10)]
 N = length(thetapost2)
 plot(thetapost2,type='l',ylab=expression(theta),xlab='iters')

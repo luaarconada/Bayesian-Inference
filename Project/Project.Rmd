@@ -1,0 +1,327 @@
+---
+title: "Project"
+author: "Lúa Arconada Manteca & Alejandro Macías Pastor"
+date: "2024-03-20"
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = ls())
+library(readxl)
+set.seed(1212)
+```
+
+# Bayesian prediciton of white cell
+
+## Objective
+
+In this assignment we are going to use Bayesian inference in our to
+predict white cell concentration in people's blood. We are going to use
+non-conjugate prior models to predict the following:
+$$P(\text{Extreme white cells concentration} \ | \ \text{Observed white cells concentration})$$.
+
+## Data
+
+We are going to use a dataset obtained from the UCI Irvine Machine
+Learning Directory
+(<https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease>). It
+contains 25 variables and 158 observations, however we are going to
+discard all and focus on our variable `wc`, which indicates the
+concentration of white cells in cells/mm$^3$.
+
+White blood cell concentration, also known as white blood cell count or
+leukocyte count, is a measure of the number of white blood cells present
+in a specified volume of blood. White blood cells are a crucial
+component of the immune system and play a vital role in defending the
+body against infections and foreign invaders. Abnormal white cell
+concentration (very high or very low) can indicate various health
+conditions and may require medical attention. We wanna predict this
+extreme concentrations to be able to predict the following issues in
+people to be able to treat them early.
+
+-   Leukopenia occurs when white cell concentration in the blood is too
+    low, usually below 4500 cells/mm$^3$. This condition can result from
+    infections, AIDS, cancer treating drugs, autoimmune disorders like
+    lupus, viral illnesses like mononucleosis, liver or spleen diseases,
+    emotional or physical stress or even genetic traits (not that common
+    in African American). Symptoms of leukopenia may include fatigue,
+    body aches, fever, chills and headaches.
+
+-   Leukocytosis occurs when white cell concentration in the blood is
+    too high, usually above 11000 cells/mm$^3$. This condition can be
+    caused by smoking, bacterial infections, inflammatory diseases,
+    leukemia, tissue damage or pregnancy. An extremely high
+    concentration does not have symptoms, but the underlying conditions
+    that cause it do.
+
+```{r}
+data <- read_excel("chronic_kidney_disease.xlsx")
+head(data)
+```
+
+We define the variable for easier manipulation and scale it so it is
+between 0 and 1.
+
+```{r}
+wc = data$wc
+max.wc = max(wc)
+min.wc = min(wc)
+wc = (wc- min.wc)/(max.wc-min.wc) + 0.01
+```
+
+We plot a histogram to see its distribution.
+
+```{r}
+hist(wc, breaks = 15)
+```
+
+We compute some measures about the variable.
+
+```{r}
+mean(wc)
+sd(wc)
+min(wc)
+max(wc)
+```
+
+## Bayesian Gamma Model
+
+We will assume that the white cell level, $X$, follows a gamma
+distribution: $$X | \alpha, \beta \sim \text{Gamma}(\alpha, \beta).$$
+
+We know that the density function is as follows:
+
+$$f(x|\alpha,\beta) = \frac{\beta^{\alpha}}{\Gamma(\alpha)} x^{\alpha -1} e^{-\beta x}, \quad x>0.$$
+
+Hence, the likelihood is:
+
+$$f(\textbf{x}|\alpha,\beta) = \frac{\beta^{n\alpha}}{\Gamma(\alpha)^n}\prod_{i=1}^{n} x_{i}^{\alpha-1}e^{-\beta\sum_{i=1}^{n} x_{i}}, \quad x>0. $$
+
+We do not have a conjugate prior for the Gamma distribution. However, if
+we only take into account what depends on $\beta$ conditioned to
+$\alpha$, we have a prior conjugate for it
+($\beta \sim \text{Gamma}(a,b)$).
+$$f(\beta) \sim \beta^{a-1}e^{-b\beta}.$$ Therefore, the conditioned
+posterior density is as follows:
+$$f(\beta|\alpha, \textbf{x}) \propto \beta^{a + n\alpha-1} e^{-\beta(b + \sum_{i=1}^n x_i)}$$
+
+Hence:
+$$\beta | \alpha,\textbf{x} \sim \text{Gamma}\left(a+n\alpha, b + \sum_{i=1}^n x_i\right).$$
+
+Now, if we take a look at what depends on $\alpha$, we can see that
+there is no conjugate prior. The conditional posterior is not a known
+distribution.
+
+$$f(\alpha|\beta,\textbf{x}) \propto \frac{\beta^{n\alpha}}{\Gamma(\alpha)^n} \prod_{i=1}^{n} x_i^{\alpha -1}$$
+
+So we take a uniform prior from the minimum of $\alpha$ to its maximum.
+$$\alpha \sim U(\alpha_{min}, \alpha_{max})$$
+
+Before anything else, we set the prior parameters. Since we do not have
+experts opinions, we assume non informative priors (the flatter the
+better).
+
+```{r}
+a = b = 0.01
+alpha.min = 0
+alpha.max = 50
+```
+
+Given a sample of the white cell concentration data
+$\textbf{x}=\{x_1,...,x_n\}$, we do not know the joint distribution.
+However, we can use an Metropolis within Gibbs sampling algorithm to
+sample from the joint distribution, since the posterior distribution
+does not show a closed expression.
+
+### Metropolis within Gibbs sampling algorithm
+
+Firstly, we define the parameters.
+
+```{r}
+n = length(wc) # The number of observations
+burnin = 1000# Burnin iterations
+iters = 10000 # Iterations in equilibrium
+total = burnin + iters # Total iterations
+```
+
+Now, we need to initialize two vectors to store the values of $\alpha$
+and $\beta$ from the Markov Chain.
+
+```{r}
+alpha = rep(NA, total)
+beta = rep(NA, total)
+```
+
+We set the initial values for the model parameters and initialize a
+count of the number of accepted values by the Metropolis Hastings
+algorithm.
+
+```{r}
+alpha[1] = 25
+beta[1] = 10
+pac = 0
+```
+
+Afterwards, we simulate the Markov Chain.
+
+```{r}
+for (t in 2:total) {
+  beta[t]=rgamma(1,shape=a+n*alpha[t-1],rate=b+sum(wc))
+  alphac=rnorm(1,alpha[t-1],sd=30)
+  if(alphac<alpha.min || alphac>alpha.max){alpha[t]=alpha[t-1]}
+  else{
+    logal=(alphac-1)*sum((wc))-n*lgamma(alphac)+n*alphac*log(beta[t])
+    logal=logal-(alpha[t-1]-1)*sum(log(wc))+n*lgamma(alpha[t-1])-n*alpha[t-1]*log(beta[t])
+    u=runif(1)
+    if (log(u)<logal){
+      alpha[t]=alphac; if (t>burnin){pac=pac+1}
+    }
+    else alpha[t]=alpha[t-1]
+  }
+}
+```
+
+We compute logal as follows:
+
+$$logal =  log(al) = log \left(\frac{f(\widetilde{\alpha})f(\textbf{x}|\widetilde{\alpha},\beta^{(t)})}{f(\alpha^{(t-1)})f(\textbf{x}|\alpha^{(t-1)},\beta^{(t)})}\right)$$
+
+And we accept it by sorting $u$ from a $U(0,1)$ and accepting if
+$log(u) < log(al)$. We check the proportion of accepted values of
+$\alpha$.
+
+```{r}
+pac = pac/iters
+pac
+```
+
+We obtain the posterior samples in equilibrium.
+
+```{r}
+alpha.post = alpha[burnin+1:iters]
+beta.post = beta[burnin+1:iters]
+```
+
+We compute the autocorrelation function for our posterior samples to check whether it is necessary to apply thinning.
+
+```{r}
+acf(alpha.post)
+acf(beta.post)
+```
+As we see from the plot, there are several lags of autocorrelation. Ideally, we would like our sample to be completely independent and identically distributed. Since we have used Markov chains to produce it, it is not uncommon to find uncorrelations such as the one found in our samples. To reduce said autocorrelations, we will carry out thinning on the sample, that is, we will select only one out of every ten values. For this, a bigger sample has to be produced.
+
+```{r}
+burnin = 1000# Burnin iterations
+iters = 100000 # Iterations in equilibrium
+total = burnin + iters # Total iterations
+```
+
+```{r}
+for (t in 2:total) {
+  beta[t]=rgamma(1,shape=a+n*alpha[t-1],rate=b+sum(wc))
+  alphac=rnorm(1,alpha[t-1],sd=30)
+  if(alphac<alpha.min || alphac>alpha.max){alpha[t]=alpha[t-1]}
+  else{
+    logal=(alphac-1)*sum((wc))-n*lgamma(alphac)+n*alphac*log(beta[t])
+    logal=logal-(alpha[t-1]-1)*sum(log(wc))+n*lgamma(alpha[t-1])-n*alpha[t-1]*log(beta[t])
+    u=runif(1)
+    if (log(u)<logal){
+      alpha[t]=alphac; if (t>burnin){pac=pac+1}
+    }
+    else alpha[t]=alpha[t-1]
+  }
+}
+```
+
+```{r}
+alpha.post=alpha[seq(burnin+1,iters,by=10)]
+beta.post=beta[seq(burnin+1,iters,by=10)]
+```
+
+```{r}
+acf(alpha.post)
+acf(beta.post)
+```
+We can see that the thinning process has ben successful, as all correlations have been suppressed.
+
+We can approximate the distributions of $\alpha$ and $\beta$.
+
+```{r}
+hist(alpha.post, breaks = 20)
+```
+
+```{r}
+hist(beta.post, breaks = 20)
+```
+
+We can compute credible intervals with 95% confidence for our model
+parameters, as well as the mean, median and the standard deviations.
+
+```{r}
+quantile(alpha.post, c(0.025, 0.975))
+quantile(beta.post, c(0.025, 0.975))
+```
+
+```{r}
+mean(alpha.post)
+median(alpha.post)
+sd(alpha.post)
+```
+
+```{r}
+mean(beta.post)
+median(beta.post)
+sd(beta.post)
+```
+
+## Predictive probabilities
+
+We said that we want to estimate the predictive probability that a new
+person's white cells count is larger than 11000 cells/mm$^3$ or smaller
+than 4500 cells/mm$^3$, given our observed data $\textbf{x}$. However,
+we have to do the same transformation to be able to use of
+distributions.
+
+```{r}
+up = (11000 - min.wc)/(max.wc - min.wc)
+up
+down = (4500 - min.wc)/(max.wc - min.wc)
+down
+```
+
+This is the following density:
+$$P(X_{new} > 0.3185841 \ \cup \ X_{new} < 0.03097345 \ | \ \textbf{x}).$$
+
+We know that it can be obtained by:
+$$f(x_{new}|\textbf{x}) = \int f(x | \alpha, \beta)f(\alpha, \beta| \textbf{x})d\alpha d\beta.$$
+
+Once again, we have a density that does not have a closed expression, so
+we want to use the posterior MCMC sample we computed to approximate it.
+
+```{r}
+N = 100000
+wc.pred = rgamma(N, shape = alpha.post, rate = beta.post)
+hist(wc.pred, breaks = 30)
+```
+
+We compare it with the observed data.
+
+```{r}
+hist(wc, freq = F, breaks = 20, ylim = c(0,6))
+lines(density(wc.pred))
+```
+
+And we can approximate the predictive probability of the extreme
+concentration by using the mean.
+
+```{r}
+mean(wc.pred > up) + mean(wc.pred < down)
+```
+
+Hence, the probability of someone new having an extreme white cells concentration (high or low) is 14.61%.

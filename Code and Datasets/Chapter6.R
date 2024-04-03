@@ -1,0 +1,38 @@
+rm(list=ls())
+#
+# Pg. 5
+library(ISLR)
+attach(Default)
+plot(balance[default=="No"],income[default=="No"], col="lightblue", xlim=c(0,3000), xlab="balance", ylab="income")
+lines(balance[default=="Yes"],income[default=="Yes"], col="orange", type="p",pch=3)
+legend("topright", c("No","Yes"), col=c("lightblue","orange"),pch=c(1,3))
+plot(balance~default)
+plot(income~default)
+#
+# Pg. 6
+fit = glm(default~balance,family = "binomial")
+summary(fit)
+grid = seq(0,4000)
+preds = predict(fit,newdata = data.frame(balance=grid),type="response")
+default.bin = ifelse(default=="Yes",1,0)
+plot(balance,default.bin, xlim=c(0,3500), ylab="Default probability")
+lines(grid,preds, col="red")
+predict(fit,newdata = data.frame(balance=1000),type="response")
+#
+# Pg. 8
+library(MCMCpack)
+logit.mcmc <- MCMClogit(default.bin~balance,burnin=100, mcmc=1000, data=Default)
+summary(logit.mcmc)
+plot(logit.mcmc)
+acf(logit.mcmc[,1])
+acf(logit.mcmc[,2])
+logit.mcmc <- MCMClogit(default.bin~balance,burnin=1000, mcmc=10000, thin =10, data=Default)
+plot(logit.mcmc)
+acf(logit.mcmc[,1])
+acf(logit.mcmc[,2])
+library(boot)
+default.prob=inv.logit(logit.mcmc[,1]+1000*logit.mcmc[,2])
+hist(default.prob,freq=F)
+mean(default.prob)
+median(default.prob)
+quantile(default.prob,c(0.025,0.975))

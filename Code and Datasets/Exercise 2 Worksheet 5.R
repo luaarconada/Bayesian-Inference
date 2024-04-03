@@ -12,7 +12,7 @@ cor_matrix
 
 
 # b) Fit a classical linear regression model with the stack loss as the response variable.
-model = lm(stack.loss~.)
+model = lm(stack.loss~., data = stackloss)
 summary(model)
 
 # i. Obtain confidence intervals for the model parameters.
@@ -46,7 +46,9 @@ plot(bayes_model)
 
 # iii. Obtain the posterior means and median of the model parameters.
 mean = apply(bayes_model, 2, mean)
+mean
 median = apply(bayes_model, 2, median)
+median
 
 # iv. Obtain 95% Bayesian credible intervals for the model parameters.
 apply(bayes_model, 2, quantile, probs = c(0.025, 0.975))
